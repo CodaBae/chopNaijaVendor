@@ -11,7 +11,7 @@ const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
 
 router.get('/', (req, res) => {
   console.log(req.user)
-  res.render('loginV', {  user: req.user });
+  res.render('beVendor', {  user: req.user });
 })
 
 router.get('/vendor', (req, res) => {
